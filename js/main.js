@@ -12,3 +12,21 @@ window.onload=function(){
 		}
 	};
 };
+
+
+/////////////////////////////////
+////////////SLIDER///////////////
+/////////////////////////////////
+
+
+$('.fade').slick({
+	dots: true,
+	infinite: true,
+	speed: 500,
+	fade: true,
+	autoplay: true,
+	draggable: true,
+	arrows: false,	
+	cssEase: 'linear'
+});
+
