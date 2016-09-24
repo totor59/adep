@@ -144,25 +144,29 @@ body {
    ========================================================================== */
 
 header {
-	background-color: #25C47D;
-	height: 80px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
 	display: inline-block;
+
+}
+.menubig {
+	display: none;
+}
+#menuflottant {
+	background-color: #00A861;
+	width: 100%;
+	height: 80px;
 	border-bottom: 2px solid #1fa868;
 	z-index: 1000;
-	box-shadow: 0px 1px 10px gray;
+	box-shadow: inset 0px 1px 10px gray;
 }
-header menu {
+.wrapper {
 	position: relative;
-	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
 }
+
 .logo {
 	height: 80px;
 	position: absolute;
@@ -389,6 +393,30 @@ footer {
 /* ==========================================================================
    Header
    ========================================================================== */
+/* ==========================================================================
+   Menubig
+   ========================================================================== */
+.floatable {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.menubig {
+	display: inline-block;
+	height: 150px;
+	width: 100%;
+	background-color: #00A861;
+	z-index: 1001;
+}
+.logobig {
+	height: 100%;
+	display: inline-block;
+}
+.logotext {
+	display: inline-block;
+}
+
 #btnMenu {
 	display: none;
 }
@@ -447,13 +475,20 @@ footer {
 /* ############################   DESKTOPS   ########################### */
 /* ##################################################################### */
 @media screen and (min-width: 992px) {
-
+#menuflottant div {
+	width: 80%;
+	margin: 0 10%;
+}
 }
 
 /* ##################################################################### */
 /* ########################   LARGE DESKTOPS   ######################### */
 /* ##################################################################### */
 @media screen and (min-width: 1200px) {
+	#menuflottant div {
+	width: 60%;
+	margin: 0 20%;
+}
 }
 
 

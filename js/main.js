@@ -13,6 +13,30 @@ window.onload=function(){
 	};
 };
 
+/////////////////////////////////
+/////GENERAL/MENU FLOATABLE//////
+/////////////////////////////////
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() >= 150) {
+		screenWidth = $(window).width();
+		containerWidth = $("#menuflottant").outerWidth(true);
+		pos = screenWidth - containerWidth;
+		$("#menuflottant").css({
+			position: 'fixed',
+			left: pos,
+			top: '0'
+		});
+	}
+	else {
+		$("#menuflottant").css({
+			position: 'absolute',
+			left: '0',
+			top: '150px'
+		});
+	}
+});
+
 
 /////////////////////////////////
 ////////////SLIDER///////////////
