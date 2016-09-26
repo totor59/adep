@@ -73,3 +73,13 @@ $('.fade').slick({
 	cssEase: 'linear'
 });
 
+
+
+
+
+
+
+
+
+
+
