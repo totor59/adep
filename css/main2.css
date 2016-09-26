@@ -161,13 +161,13 @@ header {
 	right: 0;
 	left: 0;
 	box-shadow:  0px 1px -4px gray;
+	height: 80px;
 }
 #menumobile,
 #menuflottant {
 	background-color: #fff;
 	width: 100%;
-	height: 80px;
-	border-bottom: 2px solid #00a861;
+	border-bottom: 2px solid #1fa66a;
 	z-index: 1000;
 }
 .wrapper {
@@ -228,7 +228,7 @@ header {
 	border-top: 1px solid #000;
 }
 #navmobile > ul > li:hover {
-	background: #00a861;
+	background: #1fa66a;
 	line-height: 55px;
 	-webkit-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
@@ -242,7 +242,7 @@ header {
 }
 
 #nav > ul > li:hover > a {
-	color: #00a861;
+	color: #1fa66a;
 	text-decoration: underline;
 }
 #nav li a,
@@ -262,7 +262,7 @@ main {
 	justify-content: space-around;
 }
 main figure {
-	border: 1px solid #00a861;
+	border: 1px solid #1fa66a;
 	margin: 20px;
 	background-color: #fff;
 	box-shadow: 1px 1px 10px gray;
@@ -275,7 +275,7 @@ main figcaption {
 	text-align: left;
 	padding-left: 15px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #00a861;
+	border-bottom: 1px solid #1fa66a;
 	line-height: 50px;
 	font-size: 24px;
 	font-weight: bold;
@@ -314,7 +314,7 @@ main figure:hover {
 	width: 95%;
 	margin: auto;
 	border-radius: 5px;
-	border: 2px solid #00A861;
+	border: 2px solid #1fa66a;
 }
 .fade {
 	width: 100%;
@@ -372,7 +372,7 @@ main figure:hover {
 .formations {
 	width: 100%;
 	margin: 20px 0;
-	background-color: #16c1db;
+	background-color: #16bac0;
 	box-shadow: none;
 	color: #fff;
 	border: 1px solid #f1f1f1;
@@ -421,14 +421,14 @@ footer {
 	bottom: 0;
 	width: 100%;
 	background-color: #fff;
-	border-top: 2px solid #00a861;
+	border-top: 2px solid #1fa66a;
 	margin-top: 30px;
 }
 .partenaires {
 	margin: 10px;
 	padding: 5px;
 	display: flex;
-	border: 1px solid #00a861;
+	border: 1px solid #1fa66a;
 	border-radius: 10px;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -485,18 +485,20 @@ footer {
 #menumobile {
 	display: none;
 }
-#logo {
-	display: none;
-}
 .menubig {
 	display: inline-block;
-	height: 150px;
+	height: 160px;
 	width: 100%;
 	background-color: #fff;
-	z-index: 1001;
+	z-index: 999;
 }
 #menuflottant {
 	display: inline-block;
+	height: 30px;
+	transition: height 1s;
+}
+#logo {
+	height: 0px;
 }
 .logobig {
 	height: 150px;

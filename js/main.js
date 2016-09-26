@@ -18,7 +18,7 @@ window.onload=function(){
 /////////////////////////////////
 
 $(window).scroll(function() {
-	if ($(window).scrollTop() >= 140) {
+	if ($(window).scrollTop() >= 150) {
 		screenWidth = $(window).width();
 		containerWidth = $("#menuflottant").outerWidth(true);
 		pos = screenWidth - containerWidth;
@@ -26,7 +26,8 @@ $(window).scroll(function() {
 			position: 'fixed',
 			left: pos,
 			right: '0',
-			top: '0'
+			top: '0',
+			height: '80px'
 		});
 		}
 	else {
@@ -35,21 +36,23 @@ $(window).scroll(function() {
 			left: '0',
 			right: '0',
 			top: '140px',
+			height: '30px'
 		});	
 	}
 });
 $(window).scroll(function() {
-	if ($(window).scrollTop() >= 140) {
+	if ($(window).scrollTop() >= 150) {
 		screenWidth = $(window).width();
 		containerWidth = $("#menuflottant").outerWidth(true);
 		pos = screenWidth - containerWidth;
 		$("#logo").css({
-			display: 'inline-block'
+			height: '80px',
+			transition: 'height 1s'
 		});
 	}
 	else {
 		$("#logo").css({
-			display: 'none'
+			height: '0px',
 		});
 	}
 });
