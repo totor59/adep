@@ -151,12 +151,22 @@ header {
 	display: none;
 }
 #menuflottant {
+	display: none;
+}
+#menumobile {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+#menumobile,
+#menuflottant {
 	background-color: #00A861;
 	width: 100%;
 	height: 80px;
 	border-bottom: 2px solid #1fa868;
 	z-index: 1000;
-	box-shadow: inset 0px 1px 10px gray;
+	box-shadow:  0px 1px -4px gray;
 }
 .wrapper {
 	position: relative;
@@ -167,7 +177,7 @@ header {
 
 }
 
-.logo {
+#logo {
 	height: 80px;
 	position: absolute;
 	left: 0;
@@ -185,20 +195,21 @@ header {
 	cursor: pointer;
 	opacity: 0.7;
 }
-#nav {
+#navmobile {
 	visibility: hidden;
 }
 
 @media screen and (max-width:768px) {
-#nav ul {
+#navmobile ul {
 	display: block;
 	position: fixed;
 	top: 80px;
 	right: 0;
 	left: 0;
 	width: 100%;
+	z-index: 1200;
 }	
-#nav li {
+#navmobile li {
 	display: block;
 	width: 100%;
 	text-align: center;
@@ -206,14 +217,14 @@ header {
 	border-bottom: 1px solid #000;
 	background-color: #375A5E;
 }
-#nav li a {
+#navmobile li a {
 	display: block;
 	font-weight: bold;
 }
-#nav li:first-child {
+#navmobile li:first-child {
 	border-top: 1px solid #000;
 }
-#nav > ul > li:hover {
+#navmobile > ul > li:hover {
 	background: #cc595b;
 	line-height: 55px;
 	-webkit-transition: all 0.5s ease-out;
@@ -222,10 +233,12 @@ header {
 
 }
 }
+#navmobile > ul > li:hover > a,
 #nav > ul > li:hover > a {
 	color: #fff;
 }
-#nav li a {
+#nav li a,
+#navmobile li a {
 	font-weight: bold;
 	color: #fff;
 }
@@ -297,6 +310,7 @@ main figure:hover {
 	width: 100%;
 	overflow: hidden;
 }
+
 .slick-slider {
 	margin-bottom: 0 !important;
 }
@@ -402,12 +416,21 @@ footer {
 	right: 0;
 	left: 0;
 }
+#menumobile {
+	display: none;
+}
+#logo {
+	display: none;
+}
 .menubig {
 	display: inline-block;
 	height: 150px;
 	width: 100%;
 	background-color: #00A861;
 	z-index: 1001;
+}
+#menuflottant {
+	display: inline-block;
 }
 .logobig {
 	height: 100%;
@@ -454,9 +477,19 @@ footer {
 	width: 200%;
 	height: auto;
 	position: relative;
+	transition: 2s;
 	top: 0;
 	left: -50%;
 	right: 50%;
+}
+.carslide img:hover {
+	width: 250%;
+	transition: 2s;
+	position: relative;
+	top: 0;
+	left: -75%;
+	right: 75%;
+
 }
 .formations {
 	width: 100%;
