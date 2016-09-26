@@ -266,6 +266,7 @@ main figure li {
 main figcaption {
 	width: 100%;
 	text-align: center;
+	margin-bottom: 10px;
 	border-bottom: 1px solid #375A5E;
 	line-height: 50px;
 	font-size: 24px;
@@ -290,10 +291,22 @@ main figure:hover {
 
 
 /* ==========================================================================
-   Caroussel
+   Mainfigure
    ========================================================================== */
+.mainfigure { 
+	width: 90%;
+	margin: 0 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
 .caroussel {
-	width: 100%;
+	width: 95%;
+	margin: 10px;
+	border-radius: 5px;
+	border: 4px solid #00A861;
 }
 .fade {
 	width: 100%;
@@ -314,6 +327,26 @@ main figure:hover {
 .slick-slider {
 	margin-bottom: 0 !important;
 }
+.socialbar ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0;
+}
+.socialbar li {
+	display: inline-block;
+	list-style: none;
+}
+.socialbar li img {
+	height: 70px;
+	border-radius: 15px;
+}
+.description {
+	width: 100%;
+}
+
+
 /* ==========================================================================
    Formations
    ========================================================================== */
@@ -466,25 +499,45 @@ footer {
 /* ==========================================================================
    Main
    ========================================================================== */
-.description {
-	width: 100%;
-	order: -1;
+.mainfigure {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
 }
 .caroussel {
-	width: 45%;
+	width: 75%;
+	display: inline-block;
+	margin: 10px;
+}
+.socialbar {
+	width: 15%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.socialbar ul {
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.socialbar li img {
+	height: 70px;
 }
 .carslide img {
 	width: 200%;
 	height: auto;
 	position: relative;
-	transition: 2s;
+	transition: 4s;
 	top: 0;
 	left: -50%;
 	right: 50%;
 }
 .carslide img:hover {
 	width: 250%;
-	transition: 2s;
+	transition: 4s;
 	position: relative;
 	top: 0;
 	left: -75%;
@@ -495,7 +548,6 @@ footer {
 	width: 100%;
 }
 .card {
-	order: -1;
 	width: 45%;
 }
 .formationwrapper {
@@ -511,6 +563,9 @@ footer {
 #menuflottant div {
 	width: 80%;
 	margin: 0 10%;
+}
+.socialbar li img {
+	height: 100px;
 }
 }
 
