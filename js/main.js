@@ -18,7 +18,7 @@ window.onload=function(){
 /////////////////////////////////
 
 $(window).scroll(function() {
-	if ($(window).scrollTop() >= 150) {
+	if ($(window).scrollTop() >= 140) {
 		screenWidth = $(window).width();
 		containerWidth = $("#menuflottant").outerWidth(true);
 		pos = screenWidth - containerWidth;
@@ -34,12 +34,12 @@ $(window).scroll(function() {
 			position: 'absolute',
 			left: '0',
 			right: '0',
-			top: '150px',
+			top: '140px',
 		});	
 	}
 });
 $(window).scroll(function() {
-	if ($(window).scrollTop() >= 150) {
+	if ($(window).scrollTop() >= 140) {
 		screenWidth = $(window).width();
 		containerWidth = $("#menuflottant").outerWidth(true);
 		pos = screenWidth - containerWidth;

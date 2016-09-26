@@ -97,6 +97,7 @@ textarea {
 html, body, h1 {
 	margin: 0;
 	padding: 0;
+	color: #585858;
 }
 * {
     margin: 0;
@@ -106,7 +107,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	position: relative; 
+	position: relative;
+        background-color: #f1f1f1;	
 }
 .row {
 	flex: 1;
@@ -158,15 +160,15 @@ header {
 	top: 0;
 	right: 0;
 	left: 0;
+	box-shadow:  0px 1px -4px gray;
 }
 #menumobile,
 #menuflottant {
-	background-color: #00A861;
+	background-color: #fff;
 	width: 100%;
 	height: 80px;
-	border-bottom: 2px solid #1fa868;
+	border-bottom: 2px solid #00a861;
 	z-index: 1000;
-	box-shadow:  0px 1px -4px gray;
 }
 .wrapper {
 	position: relative;
@@ -183,6 +185,7 @@ header {
 	left: 0;
 	top: 0;
 }
+.logobig img:hover,
 .logo:hover {
 	transform: rotate(360deg);
 	transition: 2s;
@@ -215,7 +218,7 @@ header {
 	text-align: center;
 	line-height: 50px;
 	border-bottom: 1px solid #000;
-	background-color: #375A5E;
+	background-color: #fff;
 }
 #navmobile li a {
 	display: block;
@@ -225,22 +228,27 @@ header {
 	border-top: 1px solid #000;
 }
 #navmobile > ul > li:hover {
-	background: #cc595b;
+	background: #00a861;
 	line-height: 55px;
 	-webkit-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 
 }
-}
-#navmobile > ul > li:hover > a,
-#nav > ul > li:hover > a {
+#navmobile > ul > li:hover > a {
 	color: #fff;
+	text-decoration: underline;
+}
+}
+
+#nav > ul > li:hover > a {
+	color: #00a861;
+	text-decoration: underline;
 }
 #nav li a,
 #navmobile li a {
 	font-weight: bold;
-	color: #fff;
+	color: #585858;
 }
 /* ==========================================================================
    Main
@@ -254,22 +262,23 @@ main {
 	justify-content: space-around;
 }
 main figure {
-	border-radius: 5px;
-	border: 1px solid #375A5E;
+	border: 1px solid #00a861;
 	margin: 20px;
-	background-color: #f1f1f1;
+	background-color: #fff;
 	box-shadow: 1px 1px 10px gray;
+	transition: 1s;
 }
 main figure li {
 	margin-left: 10px;
 }
 main figcaption {
-	width: 100%;
-	text-align: center;
+	text-align: left;
+	padding-left: 15px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #375A5E;
+	border-bottom: 1px solid #00a861;
 	line-height: 50px;
 	font-size: 24px;
+	font-weight: bold;
 
 }
 main p,
@@ -279,9 +288,8 @@ main h3 {
        margin: 10px;
 }  
 main figure:hover {
-	transition: ease 1s;
-	border: 1px solid #375A5E;
-	box-shadow: 2px 2px 15px gray;
+	transition: 1s;
+	box-shadow: 4px 4px 15px gray;
 	 }
 
 
@@ -304,9 +312,9 @@ main figure:hover {
 
 .caroussel {
 	width: 95%;
-	margin: 10px;
+	margin: auto;
 	border-radius: 5px;
-	border: 4px solid #00A861;
+	border: 2px solid #00A861;
 }
 .fade {
 	width: 100%;
@@ -341,6 +349,11 @@ main figure:hover {
 .socialbar li img {
 	height: 70px;
 	border-radius: 15px;
+	transition: 1s;
+}
+.socialbar li img:hover {
+	opacity: 0.6;
+	transition: 1s;
 }
 .description {
 	width: 100%;
@@ -351,14 +364,34 @@ main figure:hover {
    Formations
    ========================================================================== */
 
-.formations figcaption {
+.formationwrapper {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
 }
-.formations figcaption img {
-	height: 35px;
+.formations {
+	width: 100%;
+	margin: 20px 0;
+	background-color: #16c1db;
+	box-shadow: none;
+	color: #fff;
+	border: 1px solid #f1f1f1;
+}
+.formations h3 {
+	text-decoration: underline;
+}
+.formations:hover {
+	box-shadow: none;
+}
+.col-1, .col-2, .col-3 {
+	width: 310px;
+	margin: 0 auto;
+}
+.col-1 li, .col-2 li, .col-3 li {
+	list-style: url("../img/pointing.png");
+}
+.formations a {
+	color: #fff;
 }
 /* ==========================================================================
    Card
@@ -387,20 +420,20 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background-color: #25C47D;
+	background-color: #fff;
+	border-top: 2px solid #00a861;
 	margin-top: 30px;
 }
 .partenaires {
-	background-color: #fff;
-	border-radius: 5px;
-	margin: 5px;
+	margin: 10px;
 	padding: 5px;
 	display: flex;
+	border: 1px solid #00a861;
+	border-radius: 10px;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: inset 0px 1px 10px gray;
 }
 .logopart {
 	height: 60px;
@@ -410,22 +443,22 @@ footer {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: flex-start;
+	align-items: stretch;
 	width: 90%;
 	margin: 0 5%;
 }
 .col1,
 .col2 {
 	display: inline-block;
-	color: #fff;
+	color: #585858;
 	font-weight: bold;
 	font-size: 14px;
-	width: 45%;
+	max-width: 230px;
 	list-style: none;
-	margin: 20px 0;
+	margin: 20px auto;
 }
 .copyright {
-	color: #fff;
+	color: #585858;
 	width: 100%;
 	text-align: center;
 	font-size: 12px;
@@ -459,20 +492,32 @@ footer {
 	display: inline-block;
 	height: 150px;
 	width: 100%;
-	background-color: #00A861;
+	background-color: #fff;
 	z-index: 1001;
 }
 #menuflottant {
 	display: inline-block;
 }
 .logobig {
-	height: 100%;
+	height: 150px;
 	display: inline-block;
+	position: relative;
+}
+.logobig img {
+	height: 150px;
+	position: absolute;
+	top: 0;
 }
 .logotext {
 	display: inline-block;
+	position: absolute;
+	top: 25px;
+	left: 220px;
+	font-size: 18px;
 }
-
+.logotext li {
+	list-style: none;
+}
 #btnMenu {
 	display: none;
 }
@@ -527,33 +572,41 @@ footer {
 	height: 70px;
 }
 .carslide img {
-	width: 200%;
+	width: 130%;
 	height: auto;
 	position: relative;
 	transition: 4s;
 	top: 0;
-	left: -50%;
-	right: 50%;
+	left: -15%;
+	right: 15%;
 }
 .carslide img:hover {
-	width: 250%;
+	width: 150%;
 	transition: 4s;
 	position: relative;
 	top: 0;
-	left: -75%;
-	right: 75%;
+	left: -25%;
+	right: 25%;
 
 }
 .formations {
-	width: 100%;
-}
-.card {
-	width: 45%;
+	padding: 20px 10px;
 }
 .formationwrapper {
-	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	align-items: stretch;
+}
+.col-1, .col-2, .col-3 {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.col-1, .col-2 {
+	border-right: 1px solid #fff;
+}
+.twittertimeline,
+.card {
+	width: 45%;
 }
 }
 /* ##################################################################### */
