@@ -237,13 +237,11 @@ header {
 }
 #navmobile > ul > li:hover > a {
 	color: #fff;
-	text-decoration: underline;
 }
 }
 
 #nav > ul > li:hover > a {
 	color: #1fa66a;
-	text-decoration: underline;
 }
 #nav li a,
 #navmobile li a {
@@ -378,7 +376,7 @@ main figure:hover {
 	border: 1px solid #f1f1f1;
 }
 .formations h3 {
-	text-decoration: underline;
+	font-weight: bold;
 }
 .formations:hover {
 	box-shadow: none;
@@ -618,10 +616,7 @@ main figcaption {
 /* ############################   DESKTOPS   ########################### */
 /* ##################################################################### */
 @media screen and (min-width: 992px) {
-#menuflottant div {
-	width: 80%;
-	margin: 0 10%;
-}
+
 .socialbar li img {
 	height: 100px;
 }
@@ -632,8 +627,8 @@ main figcaption {
 /* ##################################################################### */
 @media screen and (min-width: 1200px) {
 	#menuflottant div {
-	width: 60%;
-	margin: 0 20%;
+	width: 80%;
+	margin: 0 10%;
 }
 }
 
