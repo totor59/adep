@@ -260,7 +260,7 @@ main {
 	justify-content: space-around;
 }
 main figure {
-	border: 1px solid #1fa66a;
+	border: 1px solid #585858;
 	margin: 20px;
 	background-color: #fff;
 	box-shadow: 1px 1px 10px gray;
@@ -273,7 +273,7 @@ main figcaption {
 	text-align: left;
 	padding-left: 15px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #1fa66a;
+	border-bottom: 1px solid #585858;
 	line-height: 50px;
 	font-size: 24px;
 	font-weight: bold;
@@ -312,7 +312,7 @@ main figure:hover {
 	width: 95%;
 	margin: auto;
 	border-radius: 5px;
-	border: 2px solid #1fa66a;
+	border: 2px solid #16bac0;
 }
 .fade {
 	width: 100%;
@@ -426,7 +426,7 @@ footer {
 	margin: 10px;
 	padding: 5px;
 	display: flex;
-	border: 1px solid #1fa66a;
+	border: 1px solid #16bac0;
 	border-radius: 10px;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -552,6 +552,7 @@ main figcaption {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: stretch;
+	width: 95%;
 }
 .caroussel {
 	width: 75%;
@@ -575,21 +576,21 @@ main figcaption {
 	height: 70px;
 }
 .carslide img {
-	width: 130%;
+	width: 120%;
 	height: auto;
 	position: relative;
 	transition: 4s;
 	top: 0;
-	left: -15%;
-	right: 15%;
+	left: -10%;
+	right: 10%;
 }
 .carslide img:hover {
-	width: 150%;
+	width: 130%;
 	transition: 4s;
 	position: relative;
 	top: 0;
-	left: -25%;
-	right: 25%;
+	left: -15%;
+	right: 15%;
 
 }
 .formations {
@@ -610,6 +611,9 @@ main figcaption {
 .twittertimeline,
 .card {
 	width: 45%;
+}
+.quiz {
+	width: 95%;
 }
 }
 /* ##################################################################### */
