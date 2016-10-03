@@ -27,13 +27,9 @@
 	  <![endif]-->
 
 	  <!-- Add your site or application content here -->
-	<audio id="wizz" src="audio/whee.mp3" preload="auto">
-					Your browser isn't invited for super fun audio time.
-	</audio>
-
 	 <header>
 		 <menu class="menubig">
-			 <div class="logobig" onmouseover="document.getElementById('wizz').play()">
+			 <div class="logobig">
 				 <img src="img/logo-ADEP.png">
 				 <ul class="logotext">
 					 <li>ASSOCIATION</li>
@@ -48,13 +44,15 @@
 			 <div class="wrapper">
 		 <img class="logo" id="logo" src="img/logo-ADEP.png">
 		 <nav id="nav">
-		 <ul>
-			 <li><a href="#">Accueil</a></li>
-			 <li><a href="#">Animations</a></li>
-			 <li><a href="#">Forum</a></li>
-			 <li><a href="#">Eportfolio</a></li>
-			 <li><a href="#">Les Jardins Partagés</a></li>
-			 <li><a href="#">Plan d'accès</a></li>
+		 <ul id="navul">
+			 <li><a href="#mainfigure">L'Adep</a></li>
+			 <li><a href="#">Compétences clés</a></li>
+			 <li><a href="#">Medias Lab</a></li>
+			 <li><a href="#">Simplon</a></li>
+			 <li><a href="#jardin">Les Jardins Partagés</a></li>
+			 <li><a href="#">Arts Appliqués</a></li>
+			 <li><a href="#">Centres de ressources</a></li>
+			 <li><a href="#">Langues étrangères</a></li>
 		</ul>
 		 </nav>
 			 </div>
@@ -78,7 +76,7 @@
 	 <main class="row">
 
 
-	 <figure class="mainfigure">
+	 <figure id="mainfigure" class="mainfigure">
 		 <figcaption>L'Adep</figcaption>
 
 
@@ -160,7 +158,7 @@
 
 	 </figure>
 
-	 <figure class="card">
+	 <figure id="jardin" class="card">
 		 <figcaption>L'Adep c'est aussi ...</figcaption>
 		 <div class="imgwrapper">
 			 <img class="cardimg" src="img/jardin.jpg">

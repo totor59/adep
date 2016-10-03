@@ -17,8 +17,9 @@ window.onload=function(){
 /////GENERAL/MENU FLOATABLE//////
 /////////////////////////////////
 
+
 $(window).scroll(function() {
-	if ($(window).scrollTop() >= 150) {
+	if ($(window).scrollTop() >= $(window).height()) {
 		screenWidth = $(window).width();
 		containerWidth = $("#menuflottant").outerWidth(true);
 		pos = screenWidth - containerWidth;
@@ -28,32 +29,31 @@ $(window).scroll(function() {
 			right: '0',
 			top: '0',
 			height: '80px'
+		});	
+		$("#logo").css({
+			height: '80px',
+			transition: 'height 1s'
 		});
-		}
+		$("#navul").css({
+			marginLeft: '85px',
+		});
+
+	}
 	else {
 		$("#menuflottant").css({
 			position: 'absolute',
 			left: '0',
 			right: '0',
-			top: '140px',
-			height: '30px'
+			top: '90vh',
+			height: '10vh'
 		});	
-	}
-});
-$(window).scroll(function() {
-	if ($(window).scrollTop() >= 150) {
-		screenWidth = $(window).width();
-		containerWidth = $("#menuflottant").outerWidth(true);
-		pos = screenWidth - containerWidth;
 		$("#logo").css({
-			height: '80px',
-			transition: 'height 1s'
+			height: '0px'
 		});
-	}
-	else {
-		$("#logo").css({
-			height: '0px',
+		$("#navul").css({
+			marginLeft: '0px',
 		});
+
 	}
 });
 

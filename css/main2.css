@@ -13,7 +13,6 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
 }
 
 /*
@@ -185,7 +184,6 @@ header {
 	left: 0;
 	top: 0;
 }
-.logobig img:hover,
 .logo:hover {
 	transform: rotate(360deg);
 	transition: 2s;
@@ -253,7 +251,7 @@ header {
    ========================================================================== */
 main {
 	width: 100%;
-	margin: 100px 0 400px 0;
+	margin: 90px 0 400px 0;
 	display: flex; 
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -485,35 +483,32 @@ footer {
 }
 .menubig {
 	display: inline-block;
-	height: 160px;
+	height: 90vh;
 	width: 100%;
 	background-color: #fff;
 	z-index: 999;
 }
 #menuflottant {
 	display: inline-block;
-	height: 30px;
+	height: 10vh;
 	transition: height 1s;
+	margin-top: -5px;
 }
 #logo {
 	height: 0px;
 }
 .logobig {
-	height: 150px;
-	display: inline-block;
-	position: relative;
+	height: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .logobig img {
-	height: 150px;
-	position: absolute;
+	height: 100%;
 	top: 0;
 }
 .logotext {
-	display: inline-block;
-	position: absolute;
-	top: 25px;
-	left: 220px;
-	font-size: 18px;
+	font-size: 32px;
 }
 .logotext li {
 	list-style: none;
@@ -528,18 +523,19 @@ footer {
 #nav ul {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
 	position: initial;
-	top: 8px;
+	top: 0;
 	right: 0;
 	left: 0;
-	margin-left: 80px;
 }
 #nav li {
 	display: inline-block;
 	text-align: center;
-	line-height: 50px;
 	border-bottom: none;
+	font-size: 12px;
 }
 /* ==========================================================================
    Main
@@ -624,6 +620,8 @@ main figcaption {
 .socialbar li img {
 	height: 100px;
 }
+#nav li {
+	font-size: 16px;
 }
 
 /* ##################################################################### */
@@ -631,8 +629,6 @@ main figcaption {
 /* ##################################################################### */
 @media screen and (min-width: 1200px) {
 	#menuflottant div {
-	width: 80%;
-	margin: 0 10%;
 }
 }
 
