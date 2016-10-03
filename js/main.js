@@ -1,17 +1,12 @@
 /////////////////////////////////
 /////GENERAL/MENU MOBILE/////////
 /////////////////////////////////
-window.onload=function(){
-	var bouton = document.getElementById('btnMenu');
-	var nav = document.getElementById('navmobile');
-	bouton.onclick = function(e){
-		if(nav.style.visibility=="hidden"){
-			nav.style.visibility="visible";
-		}else{
-			nav.style.visibility="hidden";
-		}
-	};
-};
+$("#btnMenu").click(function () {
+	    $("#navmobile").toggleClass('open');
+});
+$("#navmobile li").click(function () {
+	            $("#navmobile").removeClass('open');
+		        });
 
 /////////////////////////////////
 /////GENERAL/MENU FLOATABLE//////

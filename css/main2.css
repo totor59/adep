@@ -199,6 +199,9 @@ header {
 #navmobile {
 	visibility: hidden;
 }
+.open {
+	visibility: visible !important;
+}
 
 @media screen and (max-width:768px) {
 #navmobile ul {
@@ -214,7 +217,7 @@ header {
 	display: block;
 	width: 100%;
 	text-align: center;
-	line-height: 50px;
+	line-height: 45px;
 	border-bottom: 1px solid #000;
 	background-color: #fff;
 }
@@ -227,7 +230,7 @@ header {
 }
 #navmobile > ul > li:hover {
 	background: #1fa66a;
-	line-height: 55px;
+	line-height: 47px;
 	-webkit-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
