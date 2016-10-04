@@ -51,6 +51,46 @@ $(window).scroll(function() {
 
 	}
 });
+$(window).scroll(function() {
+	if ($(window).scrollTop() >= 150 ) {
+		screenWidth = $(window).width();
+		containerWidth = $("#menuflottantpage").outerWidth(true);
+		pos = screenWidth - containerWidth;
+		$("#menuflottantpage").css({
+			position: 'fixed',
+			left: pos,
+			right: '0',
+			top: '0',
+			height: '80px'
+		});
+		$("#logo").css({
+			height: '80px',
+			transition: 'height 1s'
+		});
+		$("#navul").css({
+			marginLeft: '85px',
+		});
+	}
+	else {
+		$("#menuflottantpage").css({
+			position: 'absolute',
+			left: '0',
+			right: '0',
+			top: '150px',
+			height: '30px'
+		});
+		$("#logo").css({
+			height: '0px'
+		});
+		$("#navul").css({
+			marginLeft: '0px',
+		});
+	
+	}
+});
+
+
+
 
 /////////////////////////////////
 ////////////SLIDER///////////////

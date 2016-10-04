@@ -148,6 +148,8 @@ header {
 	display: inline-block;
 
 }
+#menuflottantpage,
+.menupage,
 .menubig {
 	display: none;
 }
@@ -162,6 +164,7 @@ header {
 	box-shadow:  0px 1px -4px gray;
 	height: 80px;
 }
+#menuflottantpage,
 #menumobile,
 #menuflottant {
 	background-color: #fff;
@@ -276,9 +279,10 @@ main figcaption {
 	margin-bottom: 10px;
 	border-bottom: 1px solid #585858;
 	line-height: 50px;
+	height: 50px;
 	font-size: 24px;
 	font-weight: bold;
-
+	width: 100%;
 }
 main p,
 main ul,
@@ -411,6 +415,51 @@ main figure:hover {
 	width: 100%;
 	border-radius: 5px;
 }
+.card ul {
+}
+.card li {
+	list-style: url("../img/pointing.png");
+	margin-left: 20px;
+}
+/* ==========================================================================
+   Medialab
+   ========================================================================== */
+#mediaslab {
+	position: relative;
+}
+.medialabmenu {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	opacity: 0.6;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.medialabmenu li {
+	height: 33.3%;
+	margin: 0;
+	text-align: center;
+	font-size: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-top: 1px solid #585858;
+	border-bottom: 1px solid #585858;
+}
+
+.medialabmenu li a {
+	color: #fff;
+	display: block;
+	font-weight: bold;
+}
+
+
 
 /* ==========================================================================
    Footer
@@ -463,6 +512,18 @@ footer {
 	font-size: 12px;
 }
 
+/* ==========================================================================
+   Page template
+   ========================================================================== */
+.pagefigure {
+	width: 90%;
+	margin: 0 5%;
+}
+.pagefigure .caroussel {
+	width: 90%;
+	margin: 5%;
+}
+
 /* ##################################################################### */
 /* ############################   TABLETS   ############################ */
 /* ##################################################################### */
@@ -475,12 +536,7 @@ footer {
 /* ==========================================================================
    Menubig
    ========================================================================== */
-.floatable {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-}
+
 #menumobile {
 	display: none;
 }
@@ -491,12 +547,27 @@ footer {
 	background-color: #fff;
 	z-index: 999;
 }
+.menupage {
+	display: inline-block;
+	height: 160px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 999;
+}
 #menuflottant {
 	display: inline-block;
 	height: 10vh;
 	transition: height 1s;
 	margin-top: -5px;
 }
+#menuflottantpage {
+	display: inline-block;
+	height: 30px;
+	transition: height 1s;
+	margin-top: -5px;
+}
+
+	
 #logo {
 	height: 0px;
 }
@@ -514,6 +585,26 @@ footer {
 	font-size: 32px;
 }
 .logotext li {
+	list-style: none;
+}
+.logopage {
+	height: 150px;
+	display: inline-block;
+	position: relative;
+}
+.logopage img {
+	height: 150px;
+	position: absolute;
+	top: 0;
+}
+.logopagetext {
+	display: inline-block;
+	position: absolute;
+	top: 25px;
+	left: 220px;
+	font-size: 18px;
+}
+.logopagetext li {
 	list-style: none;
 }
 #btnMenu {
@@ -553,7 +644,7 @@ main figcaption {
 	align-items: stretch;
 	width: 95%;
 }
-.caroussel {
+.mainfigure .caroussel {
 	width: 75%;
 	display: inline-block;
 	margin: 10px;
@@ -626,7 +717,7 @@ main figcaption {
 #nav li {
 	font-size: 16px;
 }
-
+}
 /* ##################################################################### */
 /* ########################   LARGE DESKTOPS   ######################### */
 /* ##################################################################### */
