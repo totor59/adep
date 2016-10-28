@@ -257,7 +257,7 @@ header {
    ========================================================================== */
 main {
 	width: 100%;
-	margin: 90px 0 400px 0;
+	margin: 100px 0 400px 0;
 	display: flex; 
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -275,7 +275,6 @@ main figure li {
 }
 main figcaption {
 	text-align: left;
-	padding-left: 15px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #585858;
 	line-height: 50px;
@@ -350,7 +349,7 @@ main figure:hover {
 	list-style: none;
 }
 .socialbar li img {
-	height: 70px;
+	height: 50px;
 	border-radius: 15px;
 	transition: 1s;
 }
@@ -362,40 +361,6 @@ main figure:hover {
 	width: 100%;
 }
 
-
-/* ==========================================================================
-   Formations
-   ========================================================================== */
-
-.formationwrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-.formations {
-	width: 100%;
-	margin: 20px 0;
-	background-color: #16bac0;
-	box-shadow: none;
-	color: #fff;
-	border: 1px solid #f1f1f1;
-}
-.formations h3 {
-	font-weight: bold;
-}
-.formations:hover {
-	box-shadow: none;
-}
-.col-1, .col-2, .col-3 {
-	width: 310px;
-	margin: 0 auto;
-}
-.col-1 li, .col-2 li, .col-3 li {
-	list-style: url("../img/pointing.png");
-}
-.formations a {
-	color: #fff;
-}
 /* ==========================================================================
    Card
    ========================================================================== */
@@ -403,17 +368,19 @@ main figure:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-}
-.imgwrapper {
-	width: 80%;
-	margin: 10px 10%;
+	margin-top: 70px;
 }
 .textwrapper {
 	width: 100%;
+	padding: 10px;
 }
+.expand {
+	font-weight: bold;
+	font-size: 11px;
+}
+.imgwrapper,
 .card img {
 	width: 100%;
-	border-radius: 5px;
 }
 .card ul {
 }
@@ -436,7 +403,7 @@ main figure:hover {
 	z-index: 2;
 	opacity: 0.6;
 	position: absolute;
-	top: 50px;
+	top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
@@ -476,15 +443,13 @@ footer {
 	margin: 10px;
 	padding: 5px;
 	display: flex;
-	border: 1px solid #16bac0;
-	border-radius: 10px;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 }
 .logopart {
-	height: 60px;
+	height: 40px;
 }
 .subfooter {
 	display: flex;
@@ -504,6 +469,8 @@ footer {
 	max-width: 230px;
 	list-style: none;
 	margin: 20px auto;
+	text-align: left;
+	width: 18ch;
 }
 .copyright {
 	color: #585858;
@@ -634,6 +601,16 @@ footer {
 /* ==========================================================================
    Main
    ========================================================================== */
+
+main {
+	width: 80%;
+	margin: 100px 10% 350px 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: space-around;
+}
 main figcaption {
 	width: 100%;
 }
@@ -641,8 +618,8 @@ main figcaption {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: stretch;
-	width: 95%;
+	align-content: stretch;
+	width: 93%;
 }
 .mainfigure .caroussel {
 	width: 75%;
@@ -663,7 +640,10 @@ main figcaption {
 	justify-content: space-around;
 }
 .socialbar li img {
-	height: 70px;
+	height: 50px;
+}
+.fade {
+	height: 28vw;
 }
 .carslide img {
 	width: 120%;
@@ -683,36 +663,35 @@ main figcaption {
 	right: 15%;
 
 }
-.formations {
-	padding: 20px 10px;
-}
-.formationwrapper {
-	flex-direction: row;
-	align-items: stretch;
-}
-.col-1, .col-2, .col-3 {
-	width: 30%;
-	margin: 0 auto;
-}
-
-.col-1, .col-2 {
-	border-right: 1px solid #fff;
-}
-.twittertimeline,
 .card {
-	width: 45%;
+	width: 43%;
+	height: auto;
 }
-.quiz {
-	width: 95%;
+.medialabmenu {
+	opacity: 0.3;
+	transition: 1s;
+}
+#mediaslab:hover > .medialabmenu {
+	opacity: 0.8;
+}
+#simplon {
+	width: 93%;
+}
+.col1,
+.col2 {
+	width: 24ch;
 }
 }
 /* ##################################################################### */
 /* ############################   DESKTOPS   ########################### */
 /* ##################################################################### */
 @media screen and (min-width: 992px) {
-
+main {
+	width: 60%;
+	margin: 100px 20% 350px 20%;
+}
 .socialbar li img {
-	height: 100px;
+	height: 70px;
 }
 #nav li {
 	font-size: 16px;

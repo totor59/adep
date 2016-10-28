@@ -52,7 +52,7 @@ $(window).scroll(function() {
 	}
 });
 $(window).scroll(function() {
-	if ($(window).scrollTop() >= 150 ) {
+	if ($(window).scrollTop() >= $(window).height()) {
 		screenWidth = $(window).width();
 		containerWidth = $("#menuflottantpage").outerWidth(true);
 		pos = screenWidth - containerWidth;
